@@ -1,0 +1,5 @@
+minisom
+scikit-learn
+pytesseract
+opencv-python
+tesseract
