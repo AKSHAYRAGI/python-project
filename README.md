@@ -6,3 +6,45 @@ Medical decisioning depends on medical history of a patient. Doctors typically u
 The problem is clearly identified as an unsupervised machine learning problem and I will use relevant algorithms to distinguish various cohorts based on their differences. Furthermore, this analysis can be used for drug analysis, identifying disease progression and much more.
 
 TITLE: Health care patient clustering using Deep Neural Networks.
+
+OVERALL PROJECT EXECUTION:
+
+ As you can observe we have a notebook and a .py file. we have used the notebook for analysis and .py for implementation.
+ 
+ ANALYSIS:
+ (WE HAVE ADDED TEXT DESCRIPTION FOR MOST OF THE STEPS IN THE NOTEBOOK FOR BETTER UNDERSTANDING)
+
+1: Start with collecting the data.
+
+2: We have 4 input files and a som zip file that will be unzipped during the execution.
+<img width="257" alt="Screen Shot 2021-12-12 at 2 36 12 PM" src="https://user-images.githubusercontent.com/89653019/145728656-9ef1d8d3-8256-4936-b85a-a8638164f527.png">
+
+3: Import all the required input files.
+   
+   STEP 1: The first step in the execution is importing libraries.
+   STEP 2: Importing the data.
+   STEP 3: Data Cleaning.
+   STEP 4: Visualization and Analysis.
+   STEP 5: Creating age groups - Grouping creates categories of ages for better clustering.
+   STEP 6: Diagnosis Data Distribution.
+   STEP 7: Dividing the PrimaryDiagnosisCode into multiple columns to be able to create better clusters.
+   STEP 8: Understanding the common OverallDiagnosisCode among different patients.
+   STEP 9:Data Preparation.
+   STEP 10:Converting the string values into categories and later into integers with integer encoding.
+   STEP 11:Data Preprocessing.
+   STEP 12:Initializing and training the model.
+   STEP 13:Clustering a random data record.
+   STEP 14:How good is SOM and dbscan performing.
+   STEP 15:Comparing our results with another model gives us a good idea on how good the data actually is.
+           I am using the DBSCAN model that decides the number of clusters within a dataset.
+   SETP 16:The DBSCAN cluster plot at first glance doesnt make much sense but if you look closely you will notice that the blue dots which represent error(-1) cluster falls all over the place but other nodes are fairly clustered. The reason why DBSCAN does not perform well is because the number of error/unclustered data points are high compared to the clustered ones.
+   STEP 17:Plotting MiniSOM clusters.
+   STEP 18:Visualizing DBSCAN clusters.
+   STEP 19:The SOM clusters are better defined compared to DBSCAN and this might be the driving factor for the model to perform well compared to DBSCAN.
+   STEP 20: We are saving the model to finalized_model.pkl and saving a json file with the categorical data which can be used for implementation.
+   
+   
+   
+
+
+ 
