@@ -112,6 +112,8 @@ Final execution:
 
 3. start the apache and open the admin button next to it .
 
+![xampp](https://user-images.githubusercontent.com/89653019/145731345-183f926c-bc58-46ac-8f77-865b9a9afb11.jpeg)
+
 4. This opens the webiste upload the image saved in the xampp->htdocs->upload.
 
 5. This gives us the coherent to which the patient belongs.
