@@ -22,25 +22,43 @@ OVERALL PROJECT EXECUTION:
 3: Import all the required input files.
    
    STEP 1: The first step in the execution is importing libraries.
+   
    STEP 2: Importing the data.
+   
    STEP 3: Data Cleaning.
+   
    STEP 4: Visualization and Analysis.
+   
    STEP 5: Creating age groups - Grouping creates categories of ages for better clustering.
+   
    STEP 6: Diagnosis Data Distribution.
+   
    STEP 7: Dividing the PrimaryDiagnosisCode into multiple columns to be able to create better clusters.
+   
    STEP 8: Understanding the common OverallDiagnosisCode among different patients.
+   
    STEP 9:Data Preparation.
+   
    STEP 10:Converting the string values into categories and later into integers with integer encoding.
+   
    STEP 11:Data Preprocessing.
+   
    STEP 12:Initializing and training the model.
+   
    STEP 13:Clustering a random data record.
+   
    STEP 14:How good is SOM and dbscan performing.
-   STEP 15:Comparing our results with another model gives us a good idea on how good the data actually is.
-           I am using the DBSCAN model that decides the number of clusters within a dataset.
+   
+   STEP 15:Comparing our results with another model gives us a good idea on how good the data actually is.I am using the DBSCAN model that decides the number of clusters within a dataset.
+   
    SETP 16:The DBSCAN cluster plot at first glance doesnt make much sense but if you look closely you will notice that the blue dots which represent error(-1) cluster falls all over the place but other nodes are fairly clustered. The reason why DBSCAN does not perform well is because the number of error/unclustered data points are high compared to the clustered ones.
+   
    STEP 17:Plotting MiniSOM clusters.
+   
    STEP 18:Visualizing DBSCAN clusters.
+   
    STEP 19:The SOM clusters are better defined compared to DBSCAN and this might be the driving factor for the model to perform well compared to DBSCAN.
+   
    STEP 20: We are saving the model to finalized_model.pkl and saving a json file with the categorical data which can be used for implementation.
    
    
