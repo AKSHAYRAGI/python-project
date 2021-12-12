@@ -20,6 +20,12 @@ OVERALL PROJECT EXECUTION:
 <img width="257" alt="Screen Shot 2021-12-12 at 2 36 12 PM" src="https://user-images.githubusercontent.com/89653019/145728656-9ef1d8d3-8256-4936-b85a-a8638164f527.png">
 
 3: Import all the required input files.
+
+we also download a open-source engine called tesseract.
+
+Link: https://github.com/UB-Mannheim/tesseract/wiki
+
+Tesseract is an open-source OCR engine developed by HP that recognizes more than 100 languages, along with the support of ideographic and right-to-left languages. Also, we can train Tesseract to recognize other languages.It contains two OCR engines for image processing – a LSTM (Long Short Term Memory) OCR engine and a legacy OCR engine that works by recognizing character patterns.The OCR engine uses the Leptonica library to open the images and supports various output formats like plain text, hOCR (HTML for OCR), PDF, and TSV.
    
    STEP 1: The first step in the execution is importing libraries.
    
@@ -60,6 +66,41 @@ OVERALL PROJECT EXECUTION:
    STEP 19:The SOM clusters are better defined compared to DBSCAN and this might be the driving factor for the model to perform well compared to DBSCAN.
    
    STEP 20: We are saving the model to finalized_model.pkl and saving a json file with the categorical data which can be used for implementation.
+  
+  -----------------------------------
+  
+  IMPLEMENTAION:
+  
+1. we have to install xampp first for hosting the website.
+
+LINK:https://www.apachefriends.org/index.html
+
+xampp: XAMPP helps a local host or server to test its website and clients via computers and laptops before releasing it to the main server. It is a platform that furnishes a suitable environment to test and verify the working of projects based on Apache, Perl, MySQL database, and PHP through the system of the host itself. Among these technologies, Perl is a programming language used for web development, PHP is a backend scripting language, and MariaDB is the most vividly used database developed by MySQL. The detailed description of these components is given below.
+
+2.xampp package comes with a folder called htdocs in which we are pushing our json file and plk file.
+
+3.We also place our .py file, upload.php and index.html in the same file.
+
+4. It also comes with a inbuilt folder called upload in which we add our input images.
+
+UPLOAD.PHP: 
+
+It contains the entire code used to read the image and displaying the ouput.
+
+-----------------------------------------
+
+.PY FILE:
+
+1. we use the same .pkl model and category file in here. But we make a few little additions to the code in here.
+2. we convert the patient data to float.
+3. we fix age range of a patient by considering it as two variables low_num and high_num.
+4. we also have some commonly mistaken alphabets and numbers that are considered similar.
+
+![confusion alphabets](https://user-images.githubusercontent.com/89653019/145730807-2dfcf872-5e7e-4e79-92de-9ae00659e573.jpeg)
+
+
+
+5. we train the model so that it does not compromise on these issues.
    
    
    
