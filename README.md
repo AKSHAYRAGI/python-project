@@ -92,18 +92,31 @@ It contains the entire code used to read the image and displaying the ouput.
 .PY FILE:
 
 1. we use the same .pkl model and category file in here. But we make a few little additions to the code in here.
+
 2. we convert the patient data to float.
+
 3. we fix age range of a patient by considering it as two variables low_num and high_num.
+
 4. we also have some commonly mistaken alphabets and numbers that are considered similar.
 
 ![confusion alphabets](https://user-images.githubusercontent.com/89653019/145730807-2dfcf872-5e7e-4e79-92de-9ae00659e573.jpeg)
 
-
-
 5. we train the model so that it does not compromise on these issues.
+-----------------------------------
+
+Final execution:
+
+1. once all of these steps are perfomed then go head and open xampp.
+
+2. xampp has different modules but we only use apache in it.
+
+3. start the apache and open the admin button next to it .
+
+4. This opens the webiste upload the image saved in the xampp->htdocs->upload.
+
+5. This gives us the coherent to which the patient belongs.
    
-   
-   
+[NOTE: system prefrences has to be read and write for everyone for all the applications.]
 
 
  
